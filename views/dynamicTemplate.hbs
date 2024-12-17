@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body { font-family: Arial, sans-serif;}
+      h1 {
+      color: #333; text-align: center; } table {width: 100%; border-collapse: collapse; } table, th, td {
+      border: 1px solid black; } th, td { padding: 8px 0px; text-align: center; }
+      .static-data{ margin: 0px 0px 0px 200px; }
+       .top {
+        display: flex; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <img src="http://localhost:3000/digital_camera.jpg" style="margin:20px 0px 0px 40px; height: 200px; width:200px;" alt="Digital Camera" />
+      <div class="static-data">
+        <p><strong>Name:</strong>
+          {{static_user.0.First_name}}
+          {{static_user.0.Last_name}}</p>
+        <p><strong>Address:</strong> {{static_user.0.address}}</p>
+        <p><strong>Age:</strong> {{static_user.0.age}}</p>
+      </div>
+    </div>
+      <h1 style="text-align:center; color: rgb(40, 52, 216);">{{static_user.0.Title}}</h1>
+    <div class="main">
+      <table>
+        <thead style="background-color: rgb(190, 189, 189) ;">
+          <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each users}}
+            <tr>
+              <td class="hi">{{this.id}}</td>
+              <td>{{this.registerEmail}}</td>
+              <td>{{this.age}}</td>
+              <td>{{formatDate this.date_of_birth}}</td>
+              <td>{{this.gender}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
