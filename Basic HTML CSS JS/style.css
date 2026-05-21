@@ -1,0 +1,21 @@
+.hi{
+    color:black;
+}
+ button:hover {
+      background: #e3f2fd;
+      border-color: #2196f3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    button:active {
+      background: #fbbbbb;
+      border-color: #44d219;
+      transform: translateY(0);
+    }
+
+    button:focus {
+      background: #fff9c4;
+      border-color: #fbc02d;
+      outline: 3px solid #f57f17;
+    }

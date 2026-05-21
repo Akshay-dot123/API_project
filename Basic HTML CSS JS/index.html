@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./bird2.png" type="image/png" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <script src="./api.js" defer></script>
+  </head>
+  <body>
+<button>new1</button>
+<button>new2</button>
+<button>new3</button>
+   <mark><i><b><u>underline-italic-bold-mark</u></b></i></mark>
+    <p>para<h1>h1 tag<p>p tag inside h1 tag</p></h1></p>
+ <form id="signup-form" action="/submit" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="3">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="submit" id="submit-btn">Sign Up</button>
+      <div id="form-message" role="alert" aria-live="polite"></div>
+    </form>
+    <header class="hi">
+      header
+      <p class="hi2">para</p>
+      <a href="#main-content">Anchor tag which moves to main content of same file &nbsp <a href="#div-content">"anchor tag inside other anchor tag"</a></a>
+
+      <br>
+      <a class="hi3" href="https://google.com">Anchor tag which directs to google</a>
+      <br>
+      <a href="about.html">Anchor tag which directs to other html file(about)</a><br>
+      <span style="display: block; width: 100px;">box-1-Even though span is inline tag it behaves as block-considers width</span>
+      <p style="display: inline; width: 100px;">box-2 Even though p is block tag still it behaves as inline-ignores width</p>
+      <span style="display: inline-block; width:100px">box-3-Respects both inline and block-considers width</span>
+      <span>asd</span>
+      <div style="width: 1000px; height: 1000px; border: 2px solid red;">div tag which has 1000px height</div>
+    </header>
+    <nav></nav>
+    <main id="main-content">main content
+      <section>section 1</section>
+      <article>article 1</article>
+    </main>
+    <div id="div-content">div content</div>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>
